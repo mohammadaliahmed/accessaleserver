@@ -108,6 +108,45 @@ class UserController extends Controller
         }
     }
 
+    public function social(Request $request)
+    {
+
+        if ($request->api_username != Constants::$API_USERNAME || $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_FORBIDDEN);
+        } else {
+            $user = DB::table('users')->where('email', $request->email)->first();
+
+            if ($user == null) {
+                $milliseconds = round(microtime(true) * 1000);
+
+                $user = new User();
+                $user->name = $request->name;
+                $user->email = $request->email;
+                $user->pic_url = $request->picUrl;
+                $user->username = $request->email;
+                $user->password = md5($request->email);
+                $user->time = $milliseconds;
+
+                $user->save();
+                return response()->json([
+                    'code' => Response::HTTP_OK, 'message' => "false", 'user' => $user
+                    ,
+                ], Response::HTTP_OK);
+
+            } else {
+
+                return response()->json([
+                    'code' => Response::HTTP_OK, 'message' => "false", 'user' => $user
+                    ,
+                ], Response::HTTP_OK);
+
+
+            }
+        }
+    }
+
     public function updateFcmKey(Request $request)
     {
 

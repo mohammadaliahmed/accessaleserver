@@ -29,6 +29,7 @@ Route::group(['prefix' => 'user'], function () {
 
     Route::post('register', 'App\Http\Controllers\UserController@register');
     Route::post('login', [UserController::class, 'login']);
+    Route::post('social', [UserController::class, 'social']);
     Route::post('updateFcmKey', [UserController::class, 'updateFcmKey']);
     Route::post('completeProfile', 'App\Http\Controllers\UserController@completeProfile');
 

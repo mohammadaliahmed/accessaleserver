@@ -52,6 +52,9 @@ class AdsController extends Controller
         } else {
             $ads = DB::table('ads')
                 ->where('category','LIKE','%'.$request->category.'%')
+                ->where('price','>=',$request->startPrice)
+                ->where('price','<=',$request->endPrice)
+                ->where('city','LIKE','%'.$request->location.'%')
                 ->orderBy('id', 'desc')->get();
 
             foreach ($ads as $ad) {
