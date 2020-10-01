@@ -26,7 +26,7 @@ class AdsController extends Controller
             $ad->title = $request->title;
             $ad->description = $request->description;
             $ad->price = $request->price;
-            $ad->user_id = $request->user_id;
+            $ad->user_id = $request->userId;
             $ad->time = $milliseconds;
             $ad->city = 'Lahore';
             $ad->area = $request->area;
@@ -50,7 +50,9 @@ class AdsController extends Controller
                 'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
             ], Response::HTTP_FORBIDDEN);
         } else {
-            $ads = DB::table('ads')->orderBy('id', 'desc')->get();
+            $ads = DB::table('ads')
+                ->where('category','LIKE','%'.$request->category.'%')
+                ->orderBy('id', 'desc')->get();
 
             foreach ($ads as $ad) {
                 $user = User::find($ad->user_id);

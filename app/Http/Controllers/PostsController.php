@@ -46,6 +46,9 @@ class PostsController extends Controller
             foreach ($posts as $post) {
                 $user = User::find($post->user_id);
                 $post->user = $user;
+                $commentCount = DB::table('comments')->where('post_id', $post->id)->get()->count();
+                $post->commentsCount = $commentCount;
+
             }
             return response()->json([
                 'code' => Response::HTTP_OK, 'message' => "false", 'posts' => $posts

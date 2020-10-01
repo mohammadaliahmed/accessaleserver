@@ -19,6 +19,15 @@ class FileUploadController extends Controller
 //                'code' => Response::HTTP_OK, 'message' => "false", 'url' => $file_name
 //                ,
 //            ], Response::HTTP_OK);
+        } else if ($request->has('audio')) {
+            $file_name = $milliseconds . '.mp3';
+            $path = $request->file('audio')->move(public_path("/audio"), $file_name);
+            $photo_url = url('/audio/' . $file_name);
+            echo $file_name;
+//            return response()->json([
+//                'code' => Response::HTTP_OK, 'message' => "false", 'url' => $file_name
+//                ,
+//            ], Response::HTTP_OK);
         } else {
             return response()->json([
                 'code' => 401, 'message' => "false", 'url' => "sdfsdfsd"

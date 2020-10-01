@@ -29,7 +29,7 @@ class UserController extends Controller
             if ($user != null) {
                 return response()->json([
                     'code' => 302, 'message' => 'Account already exist',
-                ], Response::HTTP_OK);
+                ], 302);
             } else {
 
                 if ($request->email == null) {
@@ -69,6 +69,7 @@ class UserController extends Controller
             $user->name = $request->name;
             $user->dob = $request->dob;
             $user->gender = $request->gender;
+            $user->pic_url = $request->picUrl;
             $user->update();
             return response()->json([
                 'code' => Response::HTTP_OK, 'message' => "false", 'user' => $user
@@ -90,7 +91,7 @@ class UserController extends Controller
             $user = DB::table('users')->where('email', $request->email)
                 ->where('password', md5($request->password))->first();
 
-            if ($user==null) {
+            if ($user == null) {
                 return response()->json([
                     'code' => Response::HTTP_NOT_FOUND, 'message' => "Please check your Email and password "
                     ,
@@ -104,6 +105,23 @@ class UserController extends Controller
 
 
             }
+        }
+    }
+
+    public function updateFcmKey(Request $request)
+    {
+
+        if ($request->api_username != Constants::$API_USERNAME && $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_OK);
+        } else {
+            $user = User::find($request->id);
+            $user->fcm_key = $request->fcmKey;
+            $user->update();
+            return response()->json([
+                'code' => Response::HTTP_OK, 'message' => "false", 'user' => $user
+            ], Response::HTTP_OK);
         }
     }
 
