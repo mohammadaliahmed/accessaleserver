@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c2c0ea8-77ec-422d-ada3-7ed36866c408" name="Default" comment="" />
+    <list default="true" id="5c2c0ea8-77ec-422d-ada3-7ed36866c408" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +14,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoomsController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RoomsController.php">
+      <file leaf-file-name="MessagesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MessagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="1683">
+              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding>
+                <marker date="1601450690278" expanded="true" signature="3442:3763" ph="SELECT * fro... messages" />
+                <marker date="1601450690278" expanded="true" signature="3526:3633" ph="Select id fr... rooms" />
+                <marker date="1601450690278" expanded="true" signature="3644:3741" ph="select max(i... messages" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,6 +35,11 @@
       <find>getMyAds</find>
       <find>allAds</find>
       <find>allRoomMessages</find>
+      <find>mi</find>
+      <find>mil</find>
+      <find>milisex</find>
+      <find>milise</find>
+      <find>milisec</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -53,6 +64,7 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -232,7 +244,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="mess&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;room&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/RoomsController.php&#10;adscon&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/accessale/routes/api.php&#10;userc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/FileUploadController.php&#10;pos&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;post&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;mes&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;aoi&#9;null&#9;null&#10;creatu&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="room&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/RoomsController.php&#10;post&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;mess&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;appserv&#9;null&#9;null&#10;adscon&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/accessale/routes/api.php&#10;userc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/FileUploadController.php&#10;pos&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;mes&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;aoi&#9;null&#9;null&#10;creatu&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -339,25 +351,27 @@
       <workItem from="1600067723380" duration="23030000" />
       <workItem from="1600680303531" duration="8239000" />
       <workItem from="1601373329256" duration="8193000" />
-      <workItem from="1601530813028" duration="4800000" />
+      <workItem from="1601530813028" duration="5719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44262000" />
+    <option name="totallyTimeSpent" value="45181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -365,7 +379,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -519,6 +532,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="20" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -605,14 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="48" column="60" lean-forward="false" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FileUploadController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -645,23 +651,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MessagesController.php">
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="73" column="15" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="15" />
+        <state relative-caret-position="302">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <marker date="1601450690278" expanded="true" signature="3442:3763" ph="SELECT * fro... messages" />
-            <marker date="1601450690278" expanded="true" signature="3526:3633" ph="Select id fr... rooms" />
-            <marker date="1601450690278" expanded="true" signature="3644:3741" ph="select max(i... messages" />
+            <element signature="e#33#71#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RoomsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        <state relative-caret-position="323">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="48" column="60" lean-forward="false" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MessagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding>
+            <marker date="1601450690278" expanded="true" signature="3442:3763" ph="SELECT * fro... messages" />
+            <marker date="1601450690278" expanded="true" signature="3526:3633" ph="Select id fr... rooms" />
+            <marker date="1601450690278" expanded="true" signature="3644:3741" ph="select max(i... messages" />
+          </folding>
         </state>
       </provider>
     </entry>
