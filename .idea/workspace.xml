@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5c2c0ea8-77ec-422d-ada3-7ed36866c408" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2020_09_16_055112_create_ads_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_09_16_055112_create_ads_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,16 +19,44 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MessagesController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MessagesController.php">
+      <file leaf-file-name="AdsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaymentsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="45" />
               <folding>
-                <marker date="1601450690278" expanded="true" signature="3442:3763" ph="SELECT * fro... messages" />
-                <marker date="1601450690278" expanded="true" signature="3526:3633" ph="Select id fr... rooms" />
-                <marker date="1601450690278" expanded="true" signature="3644:3741" ph="select max(i... messages" />
+                <element signature="e#40#58#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2020_09_16_055112_create_ads_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_16_055112_create_ads_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="76" column="65" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -40,6 +73,8 @@
       <find>milisex</find>
       <find>milise</find>
       <find>milisec</find>
+      <find>mili</find>
+      <find>completeProfile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -50,21 +85,29 @@
       <list>
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_09_15_065625_create_posts_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2020_09_16_055112_create_ads_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_25_120543_create_rooms_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RoomsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_25_113238_create_messages_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CommentsController.php" />
         <option value="$PROJECT_DIR$/app/Models/Comments.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FileUploadController.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MessagesController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_10_06_070855_create_feedback_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_10_06_071735_create_feedbacks_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Models/aaadsd.php" />
+        <option value="$PROJECT_DIR$/app/Models/dfdfd.php" />
+        <option value="$PROJECT_DIR$/app/Models/Payments.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_09_16_055112_create_ads_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_10_07_045434_create_payments_table.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PaymentsController.php" />
       </list>
     </option>
   </component>
@@ -244,12 +287,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="room&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/RoomsController.php&#10;post&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;mess&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;appserv&#9;null&#9;null&#10;adscon&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/accessale/routes/api.php&#10;userc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/FileUploadController.php&#10;pos&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;mes&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;aoi&#9;null&#9;null&#10;creatu&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="paym&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PaymentsController.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/accessale/routes/api.php&#10;adsco&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;userco&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;fee&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/FeedbackController.php&#10;room&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/RoomsController.php&#10;post&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;mess&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;appserv&#9;null&#9;null&#10;adscon&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;userc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/FileUploadController.php&#10;pos&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/PostsController.php&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/UserController.php&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/AdsController.php&#10;mes&#9;FILE&#9;file://C:/xampp/htdocs/accessale/app/Http/Controllers/MessagesController.php&#10;aoi&#9;null&#9;null&#10;creatu&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\accessale\app\Http\Controllers" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\accessale\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\accessale\app\Models" />
+      <recent name="C:\xampp\htdocs\accessale\app\Http\Controllers" />
       <recent name="C:\xampp\htdocs\accessale\database\migrations" />
       <recent name="C:\xampp\htdocs\accessale\app" />
     </key>
@@ -351,12 +397,12 @@
       <workItem from="1600067723380" duration="23030000" />
       <workItem from="1600680303531" duration="8239000" />
       <workItem from="1601373329256" duration="8193000" />
-      <workItem from="1601530813028" duration="5719000" />
+      <workItem from="1601530813028" duration="14231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45181000" />
+    <option name="totallyTimeSpent" value="53693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -442,9 +488,9 @@
         <state relative-caret-position="1003">
           <caret line="66" column="47" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="47" />
           <folding>
-            <marker date="1601450690278" expanded="true" signature="3442:3763" ph="SELECT * fro... messages" />
-            <marker date="1601450690278" expanded="true" signature="3526:3633" ph="Select id fr... rooms" />
-            <marker date="1601450690278" expanded="true" signature="3644:3741" ph="select max(i... messages" />
+            <marker date="1601570068414" expanded="true" signature="3500:3821" ph="SELECT * fro... messages" />
+            <marker date="1601570068414" expanded="true" signature="3584:3691" ph="Select id fr... rooms" />
+            <marker date="1601570068414" expanded="true" signature="3702:3799" ph="select max(i... messages" />
           </folding>
         </state>
       </provider>
@@ -528,14 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Posts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -560,14 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_16_055112_create_ads_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_25_113238_create_messages_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -588,6 +618,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -619,44 +650,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FileUploadController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="127" column="38" lean-forward="true" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <element signature="e#33#71#0#PHP" expanded="true" />
+            <element signature="e#33#71#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,14 +676,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FileUploadController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MessagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
-            <marker date="1601450690278" expanded="true" signature="3442:3763" ph="SELECT * fro... messages" />
-            <marker date="1601450690278" expanded="true" signature="3526:3633" ph="Select id fr... rooms" />
-            <marker date="1601450690278" expanded="true" signature="3644:3741" ph="select max(i... messages" />
+            <marker date="1601570068414" expanded="true" signature="3500:3821" ph="SELECT * fro... messages" />
+            <marker date="1601570068414" expanded="true" signature="3584:3691" ph="Select id fr... rooms" />
+            <marker date="1601570068414" expanded="true" signature="3702:3799" ph="select max(i... messages" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#40#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_06_070855_create_feedback_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="21" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_06_071735_create_feedbacks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/dfdfd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/aaadsd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Payments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_10_07_045434_create_payments_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="76" column="65" lean-forward="false" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_09_16_055112_create_ads_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="e#40#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

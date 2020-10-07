@@ -38,7 +38,7 @@ class AdsController extends Controller
 
             $ad->save();
             return response()->json([
-                'code' => Response::HTTP_OK, 'message' => "false"
+                'code' => Response::HTTP_OK, 'message' => "false",'adModel'=>$ad
             ], Response::HTTP_OK);
         }
     }
@@ -51,10 +51,33 @@ class AdsController extends Controller
             ], Response::HTTP_FORBIDDEN);
         } else {
             $ads = DB::table('ads')
-                ->where('category','LIKE','%'.$request->category.'%')
-                ->where('price','>=',$request->startPrice)
-                ->where('price','<=',$request->endPrice)
-                ->where('city','LIKE','%'.$request->location.'%')
+                ->where('category', 'LIKE', '%' . $request->category . '%')
+                ->where('price', '>=', $request->startPrice)
+                ->where('price', '<=', $request->endPrice)
+                ->where('city', 'LIKE', '%' . $request->location . '%')
+                ->orderBy('id', 'desc')->get();
+
+            foreach ($ads as $ad) {
+                $user = User::find($ad->user_id);
+                $ad->user = $user;
+            }
+            return response()->json([
+                'code' => Response::HTTP_OK, 'message' => "false", 'ads' => $ads
+            ], Response::HTTP_OK);
+        }
+    }
+
+    public function search(Request $request)
+    {
+        if ($request->api_username != Constants::$API_USERNAME || $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_FORBIDDEN);
+        } else {
+            $ads = DB::table('ads')
+                ->where('title', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('description', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('category', 'LIKE', '%' . $request->search . '%')
                 ->orderBy('id', 'desc')->get();
 
             foreach ($ads as $ad) {

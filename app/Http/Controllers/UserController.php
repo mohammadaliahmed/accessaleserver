@@ -70,6 +70,7 @@ class UserController extends Controller
             $user->dob = $request->dob;
             $user->gender = $request->gender;
             $user->pic_url = $request->picUrl;
+            $user->phone = $request->phone;
             $user->update();
             return response()->json([
                 'code' => Response::HTTP_OK, 'message' => "false", 'user' => $user

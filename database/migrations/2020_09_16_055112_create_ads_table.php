@@ -25,6 +25,8 @@ class CreateAdsTable extends Migration
             $table->string('city');
             $table->integer('views')->nullable();
             $table->string('area');
+            $table->boolean('promoted')->default(false);
+            $table->bigInteger('promotion_end_time')->nullable();
             $table->string('status')->default('pending');
             $table->double('latitude')->default(0.0);
             $table->double('longitude')->default(0.0);
