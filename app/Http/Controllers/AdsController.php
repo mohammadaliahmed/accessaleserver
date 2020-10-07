@@ -31,6 +31,7 @@ class AdsController extends Controller
             $ad->city = 'Lahore';
             $ad->area = $request->area;
             $ad->category = $request->category;
+            $ad->images = $request->images;
             $ad->promoted = 0;
             $ad->promotion_end_time = 0;
             $ad->latitude = $request->lat;
