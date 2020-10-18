@@ -51,6 +51,8 @@ Route::group(['prefix' => 'ad'], function () {
     Route::post('getMyAds', [AdsController::class, 'getMyAds']);
     Route::post('adDetails', [AdsController::class, 'adDetails']);
     Route::post('search', [AdsController::class, 'search']);
+    Route::post('deleteAd', [AdsController::class, 'deleteAd']);
+    Route::post('editAd', [AdsController::class, 'editAd']);
 
 
 });

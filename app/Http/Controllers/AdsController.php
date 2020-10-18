@@ -40,7 +40,32 @@ class AdsController extends Controller
 
             $ad->save();
             return response()->json([
-                'code' => Response::HTTP_OK, 'message' => "false",'adModel'=>$ad
+                'code' => Response::HTTP_OK, 'message' => "false", 'adModel' => $ad
+            ], Response::HTTP_OK);
+        }
+    }
+
+    public function editAd(Request $request)
+    {
+
+        if ($request->api_username != Constants::$API_USERNAME || $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_FORBIDDEN);
+        } else {
+//
+            $ad = Ads::find($request->id);
+            $ad->title = $request->title;
+            $ad->description = $request->description;
+            $ad->price = $request->price;
+            $ad->category = $request->category;
+            $ad->latitude = $request->lat;
+            $ad->longitude = $request->lon;
+            $ad->status = 'pending';
+
+            $ad->update();
+            return response()->json([
+                'code' => Response::HTTP_OK, 'message' => "false", 'adModel' => $ad
             ], Response::HTTP_OK);
         }
     }
@@ -88,6 +113,21 @@ class AdsController extends Controller
             }
             return response()->json([
                 'code' => Response::HTTP_OK, 'message' => "false", 'ads' => $ads
+            ], Response::HTTP_OK);
+        }
+    }
+
+    public function deleteAd(Request $request)
+    {
+        if ($request->api_username != Constants::$API_USERNAME || $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_FORBIDDEN);
+        } else {
+            $ad = Ads::find($request->id);
+            $ad->delete();
+            return response()->json([
+                'code' => Response::HTTP_OK, 'message' => "false"
             ], Response::HTTP_OK);
         }
     }
